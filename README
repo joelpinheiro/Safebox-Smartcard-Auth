@@ -1,0 +1,23 @@
+Universidade de Aveiro 
+Eng. de Computadores e Telemática 
+Segurança 2014/2015
+
+SafeBox
+Aplicação de partilha criptográfica de ficheiros desenvolvida no âmbito da cadeira de Segurança
+
+Autores:
+Miguel Vicente 63832
+Joel Pinheiro 65151
+
+Utilização
+Aplicação de Cliente veclient/bin/python client.py
+Aplicação de Servidor veserver/bin/python SafeBox.py
+
+LIMITAÇÕES
+
+A criação de uma conta PBox deverá ser efectuada em directórios distintos, para evitar que o ficheiro com a chave do utilizador seja "esmagado"
+
+O envio de um ficheiro requer que este esteja no directório onde está a correr a aplicação de cliente
+
+No download de um ficheiro, a existencia no directorio da aplicação de cliente de um ficheiro com o mesmo nome pode gerar conflito
+

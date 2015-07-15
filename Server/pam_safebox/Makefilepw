@@ -1,0 +1,26 @@
+CFLAGS = -I /usr/local/include/pteid -g
+PAM_INCLUDE_FILES = $(foreach f, pam_modules.h pam_client.h _pam_macros.h, /usr/include/security/$(f))
+
+all: pam_safebox_pw.so
+
+pam_safebox_pw.so: pam_safebox_pw.o 
+	ld -o $@ -shared $^ -L /usr/local/lib -lpam -lm
+
+
+pam_safebox_pw.o: pam_safebox_pw.c 
+	@for f in $(PAM_INCLUDE_FILES); do \
+		if test ! -f $$f; then \
+			echo "install libpam0g-dev with apt-get or with a similar tool"; \
+			exit 1; \
+		fi; \
+	done; \
+	echo $(CC) -o $@ -c -fPIC -fno-stack-protector $*.c $(CFLAGS); \
+	$(CC) -o $@ -c -fPIC -fno-stack-protector $*.c $(CFLAGS)
+
+install:
+	strip pam_safebox_pw.so
+	cp pam_safebox_pw.so /lib/security
+	test -d /etc/CC || mkdir /etc/CC
+	
+clean:
+	rm *.o pam_safebox_pw.so

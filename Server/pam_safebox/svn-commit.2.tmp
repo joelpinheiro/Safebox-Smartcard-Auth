@@ -1,0 +1,19 @@
+PAM modules for two way authentication (cc and pwd) 
+
+--This line, and those below, will be ignored--
+
+A    .
+AM   cryptoki.h
+A    pampwtest.py
+A    pam_safebox_pw.c
+AM   MakefileOLD
+AM   pkcs11t.h
+AM   CCkpubFile.h
+A    Makefile
+AM   pkcs11f.h
+A    ccModule.py
+A    pamtest.py
+A    Makefilepw
+A    pam_safebox.c
+AM   pkcs11.h
+AM   CCkpubFile.c

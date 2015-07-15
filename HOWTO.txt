@@ -1,0 +1,11 @@
+HOWTO:
+
+Para correr a aplicação cliente/servidor usamos uma ferramenta chamada VirtualEnv que tem todas as dependências necessárias à execução da aplicação não sendo assim necessário instalar nenhum módulo. 
+
+Para correr a aplicação cliente:
+    Ir para o diretório do Client:
+    Executar o comando: veclient/bin/python client.py
+
+Para correr a aplicação do Server:
+    Ir para o diretório do Server:
+    Executar o comando: veserver/bin/python SafeBox.py
