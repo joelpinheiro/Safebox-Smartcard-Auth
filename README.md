@@ -7,8 +7,8 @@ Safebox is a solution that allows you to upload/download/share files with two se
 
 ## Usage
 Virtual Environment:
-  $ veclient/bin/python client.py
-  $ veserver/bin/python SafeBox.py
+  - $ veclient/bin/python client.py
+  - $ veserver/bin/python SafeBox.py
 
 ## Contributing
 1. Fork it!
@@ -18,8 +18,8 @@ Virtual Environment:
 5. Submit a pull request :D
 
 ## Credits
-Joel Pinheiro
-Miguel Vicente
+- Joel Pinheiro
+- Miguel Vicente
 
 ## License
 MIT
