@@ -6,17 +6,20 @@ Safebox is a solution that allows you to upload/download/share files with two se
 
 ## Usage
 Virtual Environment:
-$ veclient/bin/python client.py
-$ veserver/bin/python SafeBox.py
+  $ veclient/bin/python client.py
+  $ veserver/bin/python SafeBox.py
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## Credits
 Joel Pinheiro
 Miguel Vicente
+
 ## License
 MIT
 
