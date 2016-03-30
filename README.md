@@ -1,6 +1,4 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Safebox}
+# Safebox
 Safebox is a solution that allows you to upload/download/share files with two security mechanisms: password/asym_key and/or smartcard:
 
 - [Report 1](https://github.com/joelpinheiro/Safebox-Smartcard-Auth/blob/master/RelatorioSeg.pdf)
@@ -21,8 +19,4 @@ Joel Pinheiro
 Miguel Vicente
 ## License
 MIT
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
-
 
